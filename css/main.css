@@ -404,13 +404,51 @@ footer{
 	    font-size: 1em;
 
 	}
+	/*escondido*/
+	#escondido5{
+		height: 200vh;
+	}
+	#escondido5 h3{
+		margin-top: 1%;
+		margin-left: 6%;
+		line-height: 150%;
+		font-weight:200;
+		letter-spacing: 0.1em;
+		font-size: 1.2em;
+	}
+	#escondido5 p, #escondido5 li{
+		font-size: 1em;
+	}
 	/*subseccion dentro de 1*/
 	#section1b h3, #section1b p{
-		margin-left: 8% !important;
+		margin-left: 6% !important;
 	}
 	#section1b p{
 		font-size: 1em;
 	}
+	/*subseccion 1c*/
+	#section1c h3{
+		margin-top: -1% !important;
+		margin-left: 6%;
+		line-height: 150%;
+		font-weight:200;
+		letter-spacing: 0.1em;
+		font-size: 1.2em;
+	}
+	.ley{
+		margin-top: -1%;
+	}
+	.leyes{
+		width: 30%;
+		margin-left: 6%;
+		margin-top: 1%;
+		font-size: 1em;
+		width: 60%;
+	}
+	.ley-col-dos button{
+		margin-bottom: 5%;
+	}
+
 	/*seccion2*/	
 	#section2 h2{
 		margin-top: -1.5% !important;
@@ -426,6 +464,15 @@ footer{
 		margin-left: 12% !important;
 	    font-size: 1em;
 	}
+	/*seccion 2escondida*/
+	#escondido6{
+		height: 200vh;
+	}
+	#escondido6 p, #escondido6 li{
+		font-size: 1em;
+
+	}
+
 	/*seccion3*/
 	.donde{
 		margin-top:5%;
@@ -568,6 +615,27 @@ footer{
 	    font-size: 1em;
 
 	}
+	/*escondido*/
+	#escondido5{
+		height: 200vh;
+	}
+	#escondido5 h3{
+		margin-top: 20%;
+		margin-left: 4%;
+		line-height: 150%;
+		font-weight:200;
+		letter-spacing: 0.1em;
+		font-size: 1.2em;
+	}
+	#escondido5 p {
+   		 margin-top: 5%;
+	}
+	#escondido5 li{
+		margin-bottom: 5%;
+	}
+	#escondido5 p, #escondido5 li{
+		font-size: 1em;
+	}
 	/*subseccion dentro de 1*/
 	#section1b h3, #section1b p{
 		margin-left: 5% !important;
@@ -577,6 +645,31 @@ footer{
 	}
 	#section1b p{
 		font-size: 1em;
+	}
+	/*subsección c dentro de 1*/
+	#section1c h3{
+		margin-top: -1% !important;
+		width: 90%;
+		margin-left: 5%;
+		line-height: 150%;
+		font-weight:200;
+		letter-spacing: 0.1em;
+		font-size: 1.2em !important;
+	}
+	.ley{
+		margin-top: -1%;
+	}
+
+	.leyes{
+		margin-left:6%;
+		width: 50%;
+		margin-top: 1%;
+		font-size: 1em;
+		width: 60%;
+		padding-left: 2%;
+	}
+	#section1c .col-xs-6 {
+    width: 100%;
 	}
 /*seccion2*/	
 	#section2 h2{
@@ -592,6 +685,14 @@ footer{
 		margin-top: 15%;
 		margin-left: 5% !important;
 	    font-size: 1.5em;
+	}
+	/*seccion 2escondida*/
+	#escondido6{
+		height: 200vh;
+	}
+	#escondido6 p, #escondido6 li{
+		font-size: 1em;
+
 	}
 /*seccion3*/
 	.donde{
