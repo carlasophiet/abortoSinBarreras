@@ -244,6 +244,23 @@ li {
 #section2 p{
 	margin-top: 0.20%;
 }
+#escondido6 p, #escondido6 li{
+	margin-left: 6%;
+	width: 90%;
+	font-size: 1.2em;
+}
+#escondido6 ul{
+	margin-top: 1%;
+
+}
+#escondido6 p:first-child{
+	margin-top: 5%;
+}
+#escondido6 li{
+	margin-bottom: 1%;
+	list-style: circle;
+	margin-left:8%;
+}
 /**********************SECTION 3 - DÓNDE **********************/
 .donde{
 	margin-top:5%;
