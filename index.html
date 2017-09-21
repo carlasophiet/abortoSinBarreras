@@ -1,183 +1,336 @@
 <!DOCTYPE html>
 <html>	
-<head>	
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aborto Sin Barreras</title>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,800,900" rel="stylesheet">
- 	<link href= "css/main.css" rel="stylesheet">
+	<head>	
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Aborto Sin Barreras</title>
+	    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	 	<link href= "css/style.css" rel="stylesheet">
+	 	<link rel="stylesheet" href="css/font-awesome.min.css">
    </head>
-<body>
-	<div class="container-fluid contenedor">
-		<div class="wrap"></div>
+	<body>
+		<div class="container-fluid">
 			<section class="header">
 				<header class="row">
 					<div class="class-xs-12 col-sm-12 col-md-12">
-						<img id="logo-arriba">
-						<h1><strong><span class="verde">ABORTO </span>SIN BARRERAS</strong></h1>
+						<img id="logo" src="./imgs/logo.svg">
 					</div>
 				</header>
 				<div class="row bloques">
 					<div class="col-xs-6 col-sm-6 col-md-3 bloque" id="header1">
 						<h2>¿Es <strong>legal el aborto</strong> en Argentina?</h2>
-						<p class= "no-mostrar">Sí. Desde 1921, de acuerdo con el artículo 86 del Código Penal y ratificado por la Corte Suprema de Justicia de la Nación en el fallo “F.A.L” de 2012 es legal en los siguientes casos:</p>
-						<button  type="button" class="btn btn-default mov" data-id="1"><strong>INGRESAR</strong></button>
+						<p class= "no-mostrar p-1 gris">Sí. Desde 1921, de acuerdo con el artículo 86 del Código Penal y ratificado por la Corte Suprema de Justicia de la Nación en el fallo “F.A.L” de 2012 es legal en los siguientes casos:</p>
+						<button  type="button" class="btn btn-default mov b-1" data-id="1">INGRESAR</button>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-3 bloque" id="header2">
 						<h2>¿<strong>Cómo acceder</strong> a un aborto?</h2>
-						<p class= "no-mostrar">Si una persona en condiciones de acceder a la interrupción legal del embarazo se acerca al sistema de salud se le debe ofrecer una consejería o derivarla donde pueda realizarla. </p>
-						<button  type="button" class="btn btn-default mov" data-id="2"><strong>INGRESAR</strong></button>
+						<p class= "no-mostrar p-1 gris">Si una persona en condiciones de acceder a la interrupción legal del embarazo se acerca al sistema de salud se le debe ofrecer una consejería o derivarla donde pueda realizarla. </p>
+						<button  type="button" class="btn btn-default mov b-1" data-id="2">INGRESAR</button>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-3 bloque" id="header3">
 						<h2>¿<strong>Dónde puedo acceder</strong> a un aborto?</h2>
-						<p class= "no-mostrar"><strong><u>#Dónde</u></strong> es una webapp que permite encontrar distintos servicios de acceso a ILE en todo el país y ubicar el más cercano. </p>
-						<button  type="button" class="btn btn-default mov" data-id="3"><strong>INGRESAR</strong></button>
+						<p class= "no-mostrar p-1 gris"><strong class="verde">#Dónde</strong> es una webapp que permite encontrar distintos servicios de acceso a ILE en todo el país y ubicar el más cercano. </p>
+						<button  type="button" class="btn btn-default mov b-3" data-id="3">INGRESAR</button>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-3 bloque" id="header4">
 						<h2><strong>Lucha por la legalización</strong> del aborto en Argentina</h2>
-						<p class= "no-mostrar">La <u>Campaña Nacional por el Derecho al Aborto Legal, Seguro y Gratuito</u> se conforma en 2005 para dar fuerza, visibilidad y organización al trabajo histórico realizado por cada sector involucrado en la lucha por la legalización del aborto. </p>
-						<button  type="button" class="btn btn-default mov" data-id="4"><strong>INGRESAR</strong></button>
+						<p class= "no-mostrar p-4 gris">La <u>Campaña Nacional por el Derecho al Aborto Legal, Seguro y Gratuito</u> se conforma en 2005 para dar fuerza, visibilidad y organización al trabajo histórico realizado por cada sector involucrado en la lucha por la legalización del aborto. </p>
+						<button  type="button" class="btn btn-default mov b-4" data-id="4">INGRESAR</button>
 					</div>
 				</div>
 			</section>
-			<!--TERMINA HEADER-->
-			<!--SECCIÓN 1-->
-			<section class="row secciones" id="section1">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<h2>¿El aborto en Argentina es legal?</h2>
-				</div>	
-				<div class="row legal">
-					<div class="sub col-xs-12 col-sm-12 col-md-6 sub">
-						<p class="strongsub"><strong>Sí. Desde 1921, de acuerdo con el artículo 86 del Código Penal y ratificado por la Corte Suprema de Justicia de la Nación en el <u>fallo “F.A.L” de 2012</u> es legal en los siguientes casos:</strong><p>
-							<ul class="row">
-								<strong><li>si representa un peligro para la vida de la persona embarazada;</li></strong>
-								<strong><li>si representa un peligro para la salud de la persona embarazada, entendida como el bienestar físico, emocional y social;</li></strong>
-								<strong><li>si es producto de  violación.</li></strong>
-							</ul>
-					</div>
-					<div class="sub col-xs-12 col-sm-12 col-md-6 sub">	
-						<p class="fallo">El mismo fallo exhorta a los estados provinciales a proporcionar las condiciones necesarias para llevar adelante las interrupciones legales de embarazos de manera rápida, accesible y segura.</p>
-						<button  type="button" class="btn btn-default btn-lg boton-legal verMas" data-id="5"><strong>INGRESAR</strong></button>
-					</div>
-			</section>		
-			<!--empieza div escondido en sección 1-->			
-			<section class="row escondido" id="escondido5">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<h3>¿Qué es y para qué sirve el Protocolo ILE?</h3>
-				</div>
-				<div class="row">
-					<div class="sub col-xs-12 col-sm-12 col-md-12">
-						<p>El <u>Protocolo para la Atención Integral de las Personas con Derecho a la Interrupción Legal del Embarazo</u>(Protocolo ILE) fue publicado en 2015 por el Ministerio de Salud de la Nación para estandarizar prácticas y garantizar el acceso a este derecho. Allí, se establecen los siguientes lineamientos para acceder a la ILE:</p>
-						<ul>
-								<li>No se necesita denuncia ni autorización policial o judicial. Sólo la certificación de la causa por un profesional de la salud y, en los casos de violación, una declaración jurada.</li>
-								<li>Las víctimas de violencia sexual deben recibir asistencia.</li>
-								<li>Se debe brindar información sobre las alternativas de atención y procedimientos disponibles.</li>
-								<li>Se debe respetar la privacidad y garantizar la confidencialidad.</li>
-								<li>Se debe sancionar administrativa y/o penalmente por demoras en la atención, brindar información falsa o negarse a realizar la interrupción del embarazo.</li>
-								<li>El profesional objetor de conciencia debe notificar su voluntad por escrito y derivar a otro profesional que garantice su realización. En caso de emergencia, deberá realizarlo. </li>
-								<li>A partir de los 14 años una persona puede tomar las decisiones respecto de su propio cuerpo sin la presencia de un adulto</li>
-								<li>Hasta los 14 años se debe prestar consentimiento con la asistencia de madres, padres o representantes legales. </li>
-								<li>Si una persona con discapacidad requiere asistencia para la toma de decisiones, debe asegurarse apoyo e información comprensible.</li>
-								<li>Se debe ofrecer información válida y confiable sobre aborto seguro. </li>
-								<li>Se debe recibir atención médica después de una interrupción del embarazo, haya sido legal o ilegal.</li>
-							</ul>	
+		</div><!--TERMINA HEADER-->
+		<!--EMPIEZAN SECTIONS-->
+			<div class="container-fluid fondo-verde" id="1">
+					<section id="section1a" class="contenido">
+						<div class="row">
+							<h2 class="col-xs-12 col-ms-12 col-md-12">¿Es legal el aborto en Argentina?</h2>
+						</div>
+							<div class="row legal">
+								<div class="sub col-xs-12 col-sm-12 col-md-6">
+									<p class="strongsub"><strong>Sí. Desde 1921, de acuerdo con el artículo 86 del Código Penal y ratificado por la Corte Suprema de Justicia de la Nación en el fallo “F.A.L” de 2012 es legal en los siguientes casos:</strong><p>	
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6 sub fallo">
+									<div class="div-lista">
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item"><span>si representa un peligro para la vida de la persona embarazada;</span></div>
+									</div>
+									<div class="div-lista">
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item"><span>si representa un peligro para la salud de la persona embarazada, entendida como el bienestar físico, emocional y social;</span></div>
+									</div>
+									<div class="div-lista">
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item"><span>si es producto de  violación.</span></div>
+									</div>
+									<p >El mismo fallo exhorta a los estados provinciales a proporcionar las condiciones necesarias para llevar adelante las interrupciones legales de embarazos de manera rápida, accesible y segura.</p>
+								</div>
+								
+						</div><!--legal-->
+						<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6">
+									<button  type="button" class="btn btn-default btn-lg boton-1 boton-oscuro verMas" data-id="5">LEER MÁS</button>
+									</div>
+								</div>
+				</section><!--termina 1a-->
+			</div><!--container	fluid-->
+			<div class="container-fluid fondo-verde borde-verde escondido"  id="escondido5">
+						<div id="escondido1">	
+							<section class="contenido" >
+								<div class="row">
+									<p class="col-xs-12 col-sm-12 col-md-6">El Protocolo para la Atención Integral de las Personas con Derecho a la Interrupción Legal del Embarazo (Protocolo ILE) fue publicado en 2015 por el Ministerio de Salud de la Nación para estandarizar prácticas y garantizar el acceso a este derecho. Allí, se establecen los siguientes lineamientos para acceder a la ILE:</p>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6  margen-chico lista-escondida">
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>
+												No se necesita denuncia ni autorización policial o judicial. Sólo la certificación de la causa por un profesional de la salud y, en los casos de violación, una declaración jurada.
+											</span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>	Las víctimas de violencia sexual deben recibir asistencia. </span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Se debe brindar información sobre las alternativas de atención y procedimientos disponibles.</span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Se debe respetar la privacidad y garantizar la confidencialidad. </span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Se debe sancionar administrativa y/o penalmente por demoras en la atención, brindar información falsa o negarse a realizar la interrupción del embarazo.</span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>El profesional objetor de conciencia debe notificar su voluntad por escrito y derivar a otro profesional que garantice su realización. En caso de emergencia, deberá realizarlo. </span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6 lista-escondida">
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>A partir de los 13 años una persona puede decidir por sí respecto de tratamientos que no resulten invasivos, ni comprometen su estado de salud o provocan un riesgo grave en su vida o integridad física. </span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Hasta los 13 años se debe prestar consentimiento con la asistencia de madres, padres o representantes legales. </span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Si una persona con discapacidad requiere asistencia para la toma de decisiones, debe asegurarse apoyo e información comprensible.</span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Se debe ofrecer información válida y confiable sobre aborto seguro. </span>
+										</div>
+									</div>
+									<div class="div-lista bottom-5">	
+										<i class="fa fa-circle bullet" aria-hidden="true"></i>
+										<div class="div-item">
+											<span>Se debe recibir atención médica después de una interrupción del embarazo, haya sido legal o ilegal.</span>
+										</div>
+									</div>
+								</div>
+							</section><!--termina 1 escondido-->
+						</div>	<!--div borde verde-->
+			</div><!--containerfluid-->
+			<div class="container-fluid fondo-mapa">
+				<section id="section1b">
+					<div class="contenido">
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<h2>¿Cómo se aplica el Protocolo en el país? </h2>
+							<p class="verde">El Protocolo ILE establece un marco de acción normado. Su ausencia no es impedimento para acceder al aborto no punible en ningún caso. Todas la jurisdicciones del país deben garantizar el acceso a la ILE. </p>
+							<p>Hasta abril de 2017, apenas 8 de las 25 jurisdicciones <u>han adherido al Protocolo Nacional</u> o cuentan con protocolos que se ajustan a estos criterios. Éstas son Chaco, Chubut, Jujuy, La Rioja, Misiones, Santa Cruz, Santa Fe y Tierra del Fuego.</p>
+							<p>Otras 8 dictaron protocolos que incluyen <u>requisitos que dificultan</u> el acceso a servicios de aborto seguro: Ciudad de Buenos Aires, Córdoba, Entre Ríos, La Pampa, Neuquén, Provincia de Buenos Aires, Río Negro y Salta.</p>
+							<p>Las 8 jurisdicciones restantes – Catamarca, Corrientes, Formosa, Mendoza, San Juan, San Luis, Santiago del Estero y Tucumán– <u>no cuentan con normas locales.</u>
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6" id="div-mapa">	
 						</div>
 					</div>
-			</section>			
-			<!--subdivisión dentro de sección1-->
-			<section class="row secciones" id="section1b">
-				<div class="col-xs-12 col-sm-12 col-md-4">
-					<h3>¿Cómo se aplica el Protocolo en el país? </h3>
-					<p>El Protocolo ILE establece un marco de acción normado. Su ausencia no es impedimento para acceder al aborto no punible en ningún caso. Todas la jurisdicciones del país deben garantizar el acceso a la ILE. </p>
-					<p>Hasta abril de 2017, apenas 8 de las 25 jurisdicciones <u>han adherido al Protocolo Nacional</u> o cuentan con protocolos que se ajustan a estos criterios. Éstas son Chaco, Chubut, Jujuy, La Rioja, Misiones, Santa Cruz, Santa Fe y Tierra del Fuego.</p>
-					<p>Otras 8 dictaron protocolos que incluyen <u>requisitos que dificultan</u> el acceso a servicios de aborto seguro: Ciudad de Buenos Aires, Córdoba, Entre Ríos, La Pampa, Neuquén, Provincia de Buenos Aires, Río Negro y Salta.</p>
-					<p>Las 8 jurisdicciones restantes – Catamarca, Corrientes, Formosa, Mendoza, San Juan, San Luis, Santiago del Estero y Tucumán– <u>no cuentan con normas locales.</u>
-					</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8"></div>
-			</section>
-			<section class="row secciones" id="section1c">
-				<h3 class="col-xs-12 col-sm-12 col-md-12 ley-col-uno">¿Qué leyes garantizan nuestros derechos sexuales y reproductivos?</h3>
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 ley">
-						<button class="leyes">Ley 25.673. Programa Nacional de Salud Sexual y Procreación Responsable.</button>
-						<button class="leyes">Ley 26.061. Protección integral de Niños, Niñas y Adolescentes.</button>
-						<button class="leyes">Ley 26.150. Nacional de Educación Sexual Integral.</button>
+				</section><!--termina 1b-->
+			</div>
+			<div class="container-fluid fondo-verde">
+				<section id="section1c">
+						<div class="contenido contenido-verde">
+							<div class="row">
+								<h3 class="col-xs-12 col-sm-12 col-md-12 ley-col-uno">¿Qué leyes garantizan nuestros <strong>derechos sexuales y reproductivos?</strong></h3>
+							</div>
+							<div class="row leyes">
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Ley 25.673.</strong></h3>
+									<p>Programa Nacional de Salud Sexual y Procreación Responsable.</p>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-4">VER</button>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Ley 26.061.</strong></h3>
+									<p>Protección integral de Niños, Niñas y Adolescentes.</p>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-3">VER</button>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Ley 26.150.</strong></h3>
+									<p>Nacional de Educación Sexual Integral</p>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-2">VER</button>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Ley 26.485.</strong></h3>
+									<p>Ley de protección integral para prevenir, sancionar y erradicar la violencia.</p>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-4">VER</button>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Fallo F.A.L.</strong></h3>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-0">VER</button>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-2 ley">
+									<h3><strong>Artículo 86</strong></h3>
+									<p>del Código Penal.</p>
+									<button class="btn-oscuro btn-ley boton-oscuro btn-ley-1">VER</button>
+								</div>
+							</div>
+						</div><!--termina 1c-->
+					</section>	
+			</div>
+			<!--TERMINA SECTION1 EMPIEZA SECTION2-->
+			<div class="container-fluid">	
+				<section id="2">
+					<div class="contenido" id="section2a">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<h2>¿Cómo acceder a un aborto?</h2>
+								<p class="strong2"><strong>Si una persona en condiciones de acceder a la interrupción legal del embarazo se acerca al sistema de salud se le debe ofrecer una consejería o derivarla donde pueda realizarla.</strong></p>
+								<p class="p2 gris">Si decide interrumpir su embarazo se debe garantizar el procedimiento lo antes posible. Si aún no ha tomado una decisión se debe respetar su proceso e informar que, si decide acceder a la ILE, cuanto antes se realice será más sencillo.</p>
+								<button  type="button" class="btn btn-default btn-lg verMas boton-oscuro btn-como" data-id="6">LEER MÁS</button>
+							
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6" id="div-flujograma">
+								<div id="titulo-flujograma"><h4 class="verde">Flujograma de modelo de atención en situaciones de ILE</h4><a data-id= "./imgs/flujograma.svg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img id="agrandar" src="./imgs/agrandar.svg"/></a></div>
+								<img src="./imgs/flujograma.svg" alt="flujograma" id="flujograma"/>
+							</div>
+						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 ley-col-dos">
-						<button class="leyes">Ley 26.485. Ley de protección integral para prevenir, sancionar y erradicar la violencia.</button>
-						<button class="leyes">Fallo F.A.L.</button>
-						<button class="leyes">Artículo 86 del Código Penal.</button>
+				</section><!--termina 2a-->		
+			</div>
+			<div class="container-fluid borde-verde escondido"  id="escondido6">
+				<div class="contenido">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 sub2 lado-izq">
+							<p>La persona en condiciones de acceso a una ILE debe contar con la información necesaria para tomar decisiones en forma autónoma y consciente, basada en evidencia científica y que incluya todos los métodos recomendados por la OMS y sus ventajas, desventajas y riesgos.</p>
+							<p>El o la profesional tratante deberá consignar de manera clara y precisa qué acciones se realizarán. También, qué información ha sido suministrada a el o la paciente. A través de un consentimiento informado, quien va a interrumpir el embarazo debe manifestar por escrito que lo hace libre de influencias y presiones y conociendo las posibilidades y riesgos. Si el embarazo es producto de una violación se debe realizar una declaración jurada sin describir los hechos ni detalles.</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 sub2 lado-der">
+							<p>El consentimiento sólo puede llevarse a cabo por la persona que desea interrumpir el embarazo, con excepción de niñas, niños y adolescentes, en cuyo caso serán sus representantes legales quienes consientan la práctica.</p>
+							<p>La médica o médico tratante debe valorar el método más apropiado para la ILE en función de la edad gestacional, el deseo de la persona y las posibilidades del centro asistencial. La atención puede realizarse en el primer nivel de atención y en forma ambulatoria. Sin embargo, es necesario que se pueda brindar atención para ILEs en todos los niveles del sistema de salud.</p>
+						</div>
 					</div>
-				</div>	
-			</section>
-			<!--TERMINA PRIMER SECCIÓN-->
-			<section class="row secciones" id="section2">
-				<div class="col-xs-12 col-sm-12 col-md-4 donde">
-					<h2>¿Cómo acceder </br>a un aborto?</h2>
-					<p>Si una persona en condiciones de acceder a la interrupción legal del embarazo se acerca al sistema de salud se le debe ofrecer una consejería o derivarla donde pueda realizarla. Si decide interrumpir su embarazo se debe garantizar el procedimiento lo antes posible. Si aún no ha tomado una decisión se debe respetar su proceso e informar que, si decide acceder a la ILE, cuanto antes se realice será más sencillo.</p>
-					<button  type="button" class="btn btn-default btn-lg boton-donde verMas" data-id="6"><strong>INGRESAR</strong></button>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8">
-					
-				</div>
-			</section>
-			<section class="row secciones escondido" id="escondido6">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<p>La persona en condiciones de acceso a una ILE debe contar con la información necesaria para tomar decisiones en forma autónoma y consciente, basada en evidencia científica y que incluya todos los métodos recomendados por la OMS y sus ventajas, desventajas y riesgos. El médico tratante deberá consignar de manera clara, concreta y precisa qué acciones se llevarán a cabo y la información que ha sido suministrada al o la paciente, quien debe manifestar por escrito que lo hace libre de influencias y presiones y conociendo las posibilidades y riesgos. Si manifiesta que el embarazo es producto de una violación debe realizar una declaración jurada, sin describir los hechos ni detalles. El consentimiento sólo puede llevarse a cabo por la persona que desea interrumpir ese embarazo, con excepción de niñas, niños y/o adolescentes, en cuyo caso serán sus representantes legales quien consientan la práctica.</p>
-					<p>La médica o médico tratante debe valorar el método más apropiado para la ILE en función de la edad gestacional, el deseo de la persona y las posibilidades del centro asistencial. La atención puede realizarse en el primer nivel de atención y en forma ambulatoria. Sin embargo, es necesario que se pueda brindar atención para ILEs en todos los niveles del sistema de salud. </p>
-					<p>Existen distintas opciones terapéuticas para realizar una ILE: </p>
-					<ul>
-						<li>El procedimiento medicamentoso que se realiza con pastillas de misoprostol combinado con mifepristona o únicamente misoprostol.</li>
-						<li>El procedimiento instrumental puede ser realizado a través de Aspiración Manual Endouterina (AMEU), raspado o legrado uterino. La Organización Mundial de la Salud recomienda los métodos de aspiración endouterina (ya sea manual o eléctrica) como métodos preferibles al legrado uterino instrumental, ya que éste conlleva menos dolor y menor pérdida de sangre. En todos los casos, estos procedimientos deben ser llevados adelante por profesionales, contemplando riesgos y necesidades de la paciente.</li>
-					</ul>
-					<p>Finalmente, el proceso de atención puede requerir acompañamiento psicológico o social, información sobre fertilidad u otras intervenciones y entrevistas de seguimiento.</p>
-				</div>
-			</section>
-			<!--TERMINA SEGUNDA SECCIÓN-->
-			<section class="row secciones" id="section3">
-				<div class="col-xs-12 col-sm-12 col-md-6 donde">
-					<h2>¿Dónde puedo</br> acceder a un aborto?</h2>
-					<p><strog class="negrita-donde">#Dónde es una Webapp</strog> <br/>que permite encontrar distintos servicios de acceso a ILE en todo el país y ubicar el más cercano. También permite calificar los servicios de manera de que poder evaluar cuál de ellos es el indicado para acceder a la práctica.</p>
-					<button  type="button" class="btn btn-default btn-lg boton-donde"><strong>INGRESAR</strong></button>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6">
-					
-				</div>
-			</section>
-			<!--TERMINA TERCERA SECCIÓN-->
-			<section class="row secciones" id="section4">
-				<div class="col-xs-12 col-sm-12 col-md-6 texto-section">
-					<h2>Lucha por la legalización del  aborto en Argentina</h2>
-					<p>La <u>Campaña Nacional por el Derecho al Aborto Legal, Seguro y Gratuito</u> se conforma en 2005 para dar fuerza, visibilidad y organización al trabajo histórico realizado por cada sector involucrado en la lucha por la legalización del aborto. La Campaña se posiciona en el debate público como interlocutora en los reclamos y es sostenida por una alianza nacional que incluye más de 300 organizaciones. Al interior de la Campaña se generaron redes de profesionales, conformadas por profesionales de la salud, periodistas, abogadas y abogados, docentes y socorristas que, desde distintos espacios, contribuyen a esta lucha. 
-					El derecho al aborto seguro supone el reconocimiento de los derechos sexuales y reproductivos. Por eso, esta lucha implica realizar no sólo modificaciones legales, sino también en los sistemas de educación, salud y, por supuesto, profundos cambios culturales. Es por esto que el lema –así como el trabajo– es integral: EDUCACIÓN SEXUAL PARA DECIDIR. ANTICONCEPTIVOS PARA NO ABORTAR. ABORTO LEGAL PARA NO MORIR.
-					</p>
-
-					<p>En 2016 se presentó por sexta vez el <u>Proyecto de Interrupción Voluntaria del Embarazo</u>. Las acciones convergen y se aúnan en la exigencia de que se debata y apruebe en el Congreso Nacional. </p>
-				
-					<p>Sumate y adherí a la Campaña en adhesionesabortolegal@gmail.com.</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6">
-					
-				</div>
-			</div>	
-
-			<footer class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6 offset-xs-6 offset-sd-6 offset-md-4 align-self-center footer">
-					<strong class="texto-footer"><span class="verde">ABORTO</span> SIN BARRERAS</strong>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 redes-sociales"></div>
+					<div class="row">
+						<strong class="col-xs-12 col-sm-12 col-md-12">Existen distintas opciones terapéuticas para realizar una ILE:</strong>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6  lado-izq">
+							<div class="div-lista bottom-5">	
+								<i class="fa fa-circle bullet verde" aria-hidden="true"></i>
+								<div class="div-item">
+									<span>El procedimiento medicamentoso que se realiza con pastillas de misoprostol combinado con mifepristona o únicamente misoprostol.
+									</span>
+								</div>
+							</div>
+							<div class="div-lista bottom-5">	
+								<i class="fa fa-circle bullet verde" aria-hidden="true"></i>
+								<div class="div-item">
+									<span>El procedimiento instrumental que puede ser realizado a través de la Aspiración Manual Endouterina (AMEU) o el raspado o legrado uterino. La OMS recomienda los métodos de aspiración endouterina (ya sea manual o eléctrica) como métodos preferibles al legrado uterino instrumental, ya que conlleva menos dolor y menor pérdida de sangre. En todos los casos, estos procedimientos deben ser llevados adelante por profesionales, contemplando riesgos y necesidades de la paciente.
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6  lado-der">
+							<p class="verde">Finalmente, el proceso de atención puede requerir acompañamiento psicológico o social, información sobre fertilidad u otras intervenciones y entrevistas de seguimiento.</p>
+						</div>		
+					</div>
+				</div><!--termina escondido seccion2-->
+			</div>
+			<!--TERMINA SECCIÓN2 EMPIEZA SECCIÓN 3-->
+			<div class="container-fluid fondo-verde" id="3">
+				<section id="section3">
+					<div class="contenido contenido-verde">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<h2>¿Dónde puedo</br> acceder a un aborto?</h2>
+								<img id="donde-titulo" src="./imgs/logo-donde.svg">
+								<p id="donde-explicacion"><strong>Es una Webapp que permite encontrar distintos servicios de acceso a ILE en todo el país y ubicar el más cercano. También permite calificar los servicios de manera de que poder evaluar cuál de ellos es el indicado para acceder a la práctica.</strong></p>
+								<button  type="button" class="btn btn-default btn-lg boton-donde">INGRESAR</button>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								
+							</div>
+						</div>
+					</div>
+				</section><!--termina section3-->
+			</div>
+			<!--TERMINA SECCIÓN3 EMPIEZA SECCIÓN4-->
+			<div class="container-fluid" id="4">
+				<div class="contenido" id="section4">
+					<div class="row">
+						<h2 class="col-xs-12 col-sm-12 col-md-12">Lucha por la legalización del aborto en Argentina</h2>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 sub4">
+							<p class="substrong4"><strong>Las barreras al aborto legal y la amenaza de criminalización empujan a las mujeres a acudir a abortos inseguros. Las leyes que sancionan o restringen el aborto violan el derecho a la salud al limitar el acceso a bienes, servicios e información de calidad. La penalización genera y perpetúa el estigma, limita la capacidad de las mujeres para hacer pleno uso de sus derechos sexuales y reproductivos y distorsiona las percepciones de los profesionales de salud, lo que a su vez dificulta el acceso de las mujeres a los servicios de atención a la salud.</strong></p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 sub4 explicacion-campaña">
+							<p >La Campaña Nacional por el Derecho al Aborto Legal, Seguro y Gratuito se conforma en 2005 para dar fuerza, visibilidad y organización al trabajo histórico realizado por cada sector involucrado en la lucha por el aborto legal. La Campaña se posiciona en el debate público como interlocutora en los reclamos. Es sostenida por una alianza nacional que incluye más de 300 organizaciones. Al interior de la Campaña se generaron redes de profesionales, conformadas por profesionales de la salud, periodistas, abogadas y abogados, docentes y socorristas que, desde distintos espacios, contribuyen a esta lucha.</p>
+							<p>El derecho al aborto seguro supone el reconocimiento de los derechos sexuales y reproductivos. Por eso, esta lucha implica realizar no sólo modificaciones legales, sino también en los sistemas de educación, salud y, por supuesto, profundos cambios culturales. Es por esto que el lema –así como el trabajo– es integral:</p>
+							<ul>
+								<li class="verde">EDUCACIÓN SEXUAL PARA DECIDIR.</li>
+								<li class="verde">ANTICONCEPTIVOS PARA NO ABORTAR. </li>
+								<li class="verde">ABORTO LEGAL PARA NO MORIR.</li>
+							</ul>
+							<p>En 2016 se presentó por sexta vez el Proyecto de Interrupción Voluntaria del Embarazo. Las acciones convergen y se aúnan en la exigencia de que se debata y apruebe en el Congreso Nacional. </p>
+							<p>Para sumarse y adherir a la Campaña, escribir a adhesionesabortolegal@gmail.com.</p>
+						</div>
+					</div>
+				</div><!--4-->
+			</div>
+			<div class="container-fluid fondo-verde">
+				<footer class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 redes-sociales">footer</div>
 			</footer>
-		</section>
-		<!--TERMINA CUARTA SECCIÓN-->
-
-
-
-	</div>
-</body>
+			</div>
+			<div><!--MODAL-->
+            <div class= "modal fade" id= "myModal" role="dialog" aria-labelledby="myModalLabel">
+                <div class= "modal-dialog modal-lg mimodal" role="document">
+                    <div class="modal-content sale">
+                        <div class="modal-body modal-center">
+                            <img src= "" class="imagen-pop grande " id="imagenGrande"/>
+                        </div>    
+                    </div>
+                </div><!-- modal dialog-->
+            </div><!--modal fade-->
+        </div>
+	</body>
 </html>
