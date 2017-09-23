@@ -11,16 +11,37 @@
 	}
 
 body{
+	background-color: #e5e5e5;
 	height:100%;
 	overflow-x:hidden;
 }
-.contenedor{
-	width:100%;
+.mostrar{
+	display:none;
+}
+
+.para-bandas{
+	width:90%;
+}
+.negro, .negro:hover, .negro:active, .negro:focus{
+	color:black;
 }
 .verde{
 	color:#82c45b;
 }
+.blanco{
+	color:white;
+}
+.verde:hover, .verde:active, .verde:focus{
+	color:#82c45b;
+}
+
+.blanco:hover, .blanco:active, .blanco:focus{
+	color:white;
+}
 .gris{
+	color:#808080;
+}
+.gris:hover, .gris:active, .gris:focus{
 	color:#808080;
 }
 .bullet{
@@ -34,6 +55,9 @@ ul{
 strong{
 	font-weight: 700 !important;
 }
+.mostrar{
+	display:none;
+}
 /*****************HEADER*************************/
 .header{
 	height: 100vh;
@@ -46,16 +70,22 @@ strong{
 
 }
 .p-1{
-	padding-top: 27%;
+	padding-top: 38%;
+}
+.p-2{
+	padding-top:28%;
 }
 .p-4{
 	padding-top: 17%;	
 }
 .b-1{
-	margin-top: 30%;
+	margin-top: 32%;
+}
+.b-2{
+	margin-top: 24%;
 }
 .b-3{
-	margin-top: 45%;
+	margin-top: 49%;
 }
 .b-4{
 	margin-top: 16%;
@@ -64,25 +94,26 @@ strong{
 header{
 	height: 15%;
 	border-bottom: solid 0.1em #82c45b;
+	margin-top: 2%
 }
 
 #logo{
 	
 	margin-left: 2%;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 /*Bloques*/
 .bloque{
-	padding-top: 5%;
+	padding-top: 7%;
 	
 }
 .bloque h2{
 	font-size:1.6em; 
-	/*margin-right: 0.10%;*/
+	
 }
 .bloque p{
 	font-size:1em;
-	/*padding-top: 17%;*/
+	
 }
 .bloque h2, .bloque p {
 	margin: 2% 5%;
@@ -113,8 +144,7 @@ header{
     border-width: 0.1em;
     border-color: white;
     border-radius:0;
-    background-color: #82c45b;
-    
+    background-color: #82c45b;    
     margin-top:10%;
     padding: 2% 5%;
 }
@@ -125,44 +155,58 @@ header{
 	padding:2% 10%;
 }
 /*************SECCIONES****************/
-
+.fondo-blanco{
+	background-color: white;
+}
 .escondido{
 	display:none;
 }
 .borde-verde{
-	border-bottom: solid 0.6em #9fe774;
 	border-top: solid 0.6em #9fe774;
+	border-bottom: solid 0.6em #9fe774;
+
+}
+.borde-verde-arriba{	
+	border-top: solid 0.6em #9fe774;
+}
+.borde-verde-abajo{
+	border-bottom: solid 0.6em #9fe774;
 }
 .contenido{
 	margin:3% 8%;
 }
-.contenido h2{
-	line-height: 150%;
+.contenido h2{	
 	font-weight:300;
-	font-size: 2.6em;
+	font-size: 2.8em;
 }
-.contenido h3{
-	line-height: 150%;
-	font-weight:300;
-	letter-spacing: 0.1em;
+.contenido h3{	
+	font-weight:300;	
 	font-size: 1.5em;
 }
 
 /**TAMAÑOS SECCIONES**/
-#section1a, #section3{
+
+#section1a{
+	height: 70vh;
+}
+
+#section3{
 	height:100vh;
 }
 #section2a{
 	height: 115vh;
 }
-#section1b,  #escondido1{
+#section4{
+	height: 145vh;
+}
+#section1b,  #escondido5{
 	height:130vh;
 }
-#escondido6, #section4{
+#escondido6{
 	height: 160vh;
 }
 #section1c{
-	height:50vh;
+	height:45vh;
 }
  
 footer{
@@ -173,6 +217,7 @@ footer{
 	background-color: #82c45b;
 	color:white;
 }
+
 .fondo-mapa{
 	background-color: #f2f2f2;
 	padding: 0;
@@ -184,18 +229,19 @@ footer{
 
 }
 /*sección uno*/
-#section1a h2{
-	width:35%;
+#aborto-titulo{
+	width:50%;
+}
+#ile{
+	width: 70% !important;
+	padding-top: 5%;
 }
 .legal .strongsub{
-	letter-spacing: 0.10em;
-	line-height: 140%;
 	font-size: 1.6em;
-
 	width:90%;
 }
 .legal .sub{
-	margin-top:5%;
+	margin-top:3%;
 }
 
 .fallo li, .fallo p{
@@ -206,7 +252,7 @@ footer{
 	margin-top: 1%;
 }
 .fallo p{
-	margin-top: 15%;
+	margin-top: 7%;
 }
 
 .div-lista{
@@ -224,14 +270,14 @@ footer{
 
 }
 /*section 1escondida*/
-#escondido1 p{
-	margin-top: 2%;
+#escondido5 p{
+	margin-top: 5%;
 	font-weight: 400;
 	font-size:1.3em;
 	width:50%;
 	line-height:170%;
 }
-#escondido1 .margen-chico{
+#escondido5 .margen-chico{
 	margin-left: -1.2% !important;
 }
 
@@ -246,41 +292,83 @@ footer{
 	color:#808080;
 }
 #section1b h2{
-	width:70%;
+	width:90%;
 }
 #section1b p{
 	margin-top: 7%;
 	width:90%;
 	font-size: 1.2em;
 }
+#Layer_1{
+	width:130%;
+	margin-left:-5%;
+}
+#mapa{
+	width:130%;
+	margin-left:-5%;
+}
+#info-box {
+  display: none;
+ position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  font-size: 1em;
+  width:20%;
+  background-color:rgba(255,255,255,0.9);
+  padding:0.5%;
+  border-radius: 10px;
+}
+path:hover {
+  stroke-width:3;
+}
+
 /*botones seccion 1c*/
-.btn-ley-4{
-	margin-top: 10%;
+#section1c h2{
+	margin-top: -5%;
 }
-.btn-ley-3{
-	margin-top: 23%;
+.col-md-1 {
+    width: 14% !important;
 }
-.btn-ley-2{
-	margin-top: 36%;
-}
-.btn-ley-0{
-	margin-top: 68%;
+.leyes a{
+	color:white;
 }
 .btn-ley-1{
-	margin-top: 50%;
+	margin-top:39%;
 }
+.btn-ley-2{
+	margin-top:55.4%;
+}
+.btn-ley-3{
+	margin-top: 74.3%;
+}
+.btn-ley-4{
+	margin-top: 4%;
+	margin-bottom: 20%;
+}
+.btn-ley-5{
+	margin-top:22%;
+}
+.btn-ley-6{
+	margin-top:98%;
+}
+.btn-ley-7{
+	margin-top:94%;
+}
+
+
 /***SECCION 2**/
 
 #section2a h4{
 	margin-top: 7%;
-	margin-left: 7%;
+	margin-left: 15%;
 	width:70%;
 	text-align:center;
 	font-size: 1.4em;
 	font-style: bold;	
 }
 #section2a h2{
-	width:60%;
+	width:70%;
 }
 
 #section2a .strong2{
@@ -300,19 +388,21 @@ footer{
 	font-size: 1em !important;
 }
 #agrandar{
-	    margin-top: 70%;
+	margin-top: 70%;
     margin-left: 200%;
 }
 #titulo-flujograma{
-
 	display:flex;
 	flex-wrap: nowrap;
 }
 #flujograma{
-	width:120%;	
+	width:135%;	
 	padding-right:5%;
 	margin-left: -12%;
 	margin-top: 5%;
+}
+.cerrar-modal{
+	padding-right: 90%;
 }
 /*seccion 2escondida*/
 #escondido6 .sub2{
@@ -337,17 +427,23 @@ footer{
 /*SECCIÓN 3*/
 #donde-titulo{
 	margin-top: 15%;
-	width:25%;
+	width:30%;
 }
 #donde-explicacion{
 	margin-top: 2%;
 	width:90%;
-	line-height: 140%;
 	font-size: 1.6em;
+}
+.boton-donde a{
+	color:white;
+}
+#img-donde{
+	width:150%;
+	padding-right: 30%;
 }
 /*SECCIÓN 4*/
 #section4 h2{
-	width: 35%;
+	width: 50%;
 }
 #section4 .sub4{
 	margin-top: 4%;
@@ -356,7 +452,6 @@ footer{
 	width:90%;
 }
 #section4 strong{
-	line-height: 140%;
 	font-size: 1.6em;
 }
 .explicacion-campaña p{
@@ -370,26 +465,48 @@ footer{
 	font-size:1.6em;
 	margin-bottom: 2%;
 }
-
+#img4{
+	width:80%;
+}
+footer{
+	background-color: black;
+	display:flex;
+	justify-content: space-around;
+}
 /*********************MEDIAS QUERIES************************************/
 @media screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape){
+	body{
+		overflow-x:hidden;
+	}
+	#section3, .container-fluid, #section2a, #section2, #escondido6{
+		overflow-y:hidden;
+	}
+	.para-bandas{
+	width:95%;
+	overflow-x:hidden;
+		}
+	.mostrar{
+		display:block;
+		}
 	.no-mostrar{
 		display:none;
-	}
+		}
 	.header{
 		padding-top:0px;
-	}
+		}
 
 	#header1, #header2, #header3, #header4 {
 		height:42.5vh;
-	}	
+		}	
 
 	.bloque h2{
 		font-size:1.2em;
-		margin-top: 5%;
+		margin-top: 0;
 	}
-
-	.b-1,.b-4,.b-3{
+	.b-3{
+		margin-top: 12%;
+	}
+	.b-1,.b-2,.b-4{
 	margin-top: 5%;
 	}
 	.contenido h2{
@@ -401,59 +518,56 @@ footer{
 		font-size: 1.2em;
 	}
 
-
-/*SECCION 1*/
-#section1a h2{
+	.bloque {
+    padding-top: 3%;
+	}
+	/*SECCION 1*/
+	#section1a h2{
 	width:70%;
-}
-.legal .strongsub{
+	}
+	.legal .strongsub{
 	/*line-height: 120%;*/
 	font-size: 1.2em;
 	width:100%;
-}
-.legal .sub{
+	}
+	.legal .sub{
 	margin-top:2%;
-}
+	}
 
-.fallo li, .fallo p{
+	.fallo li, .fallo p{
 	font-weight: 200;
 	font-size: 1.2em;
-}
-.fallo li{
+	}
+	.fallo li{
 	margin-top: 1%;
-}
-.fallo p{
+	}
+	.fallo p{
 	margin-top: 5%;
-}
+	}
  .boton-1{
  	margin-top:5%;
  	margin-bottom:10%;
  }
-/*section 1escondida*/
-#escondido1 p{
+	/*section 1escondida*/
+	#escondido5 p{
 	width:100%;	
 }
-
+#mapa{
+	width:120%;
+	margin-left: 0:;
+}
 /*leyes*/
 .ley{
-	margin-top: 3%;
+	margin-top: 2%;
 }
-.btn-ley-4{
-	margin-top: 10%;
+.btn-ley{
+	padding:2% 5%;
+	margin-bottom: 2% !important;
 }
-.btn-ley-3{
-	margin-top: 20%;
+.btn-ley-1, .btn-ley-2,.btn-ley-3,.btn-ley-4,.btn-ley-5,.btn-ley-6,.btn-ley-7{
+	margin-top: 2% !important;
 }
-.btn-ley-2{
-	margin-top: 18%;
-}
-.btn-ley-0{
-	margin-top: 23%;
-}
-.btn-ley-1{
-	margin-top: 10%;
-	margin-bottom: 15%;
-}
+
 /*SECCION 2*/
 #section2a h4{
 	margin-top: 10%;
@@ -473,6 +587,7 @@ footer{
 	font-size: 1em !important;
 }
 #flujograma{
+	width: 120%;
 	padding-bottom: 10%;
 	margin-left: -7%;
 	margin-top: 5%;
@@ -521,6 +636,9 @@ footer{
 	margin-top: 5%;
 	margin-bottom:10%;
 }
+#img-donde{
+	widows: 50%;
+}
 /*SECCION 4*/
 #section4 h2{
 	width:70%;
@@ -531,8 +649,20 @@ footer{
 .substrong4{
 	width:100%;
 }
+
 }
 @media screen and  (max-width: 480px) and (orientation: portrait){
+	body{
+		overflow-x:hidden;
+	}
+	.mostrar{
+		display:block;
+	}
+	.para-bandas{
+	width:100%;
+	overflow-x:hidden;
+}
+
 	.bullet{
 	margin-top: 3%; 
 }
@@ -580,11 +710,15 @@ footer{
 	}
 	.bloque {
 	    padding-top: 0;}
-
+.b-4{
+	margin-top: 13%;
+}
 .contenido h2{
 	font-size: 2em;
 }
-
+.container-fluid{
+	overflow:hidden;
+}
 
 	/*SECCION 1*/
 #section1a h2{
@@ -613,7 +747,7 @@ footer{
  	margin-bottom:10%;
  }
 /*section 1escondida*/
-#escondido1 p{
+#escondido5 p{
 	width:100%;	
 }
 /*1b¨*/
@@ -622,26 +756,25 @@ footer{
 }
 
 /*leyes*/
+.col-md-1 {
+    width: 50% !important;
+}
 .ley{
-	margin-top: 5%;
+	margin-bottom: 5%;
 }
-.btn-ley-4{
-	margin-top: 10%;
+.ley strong{
+	font-size: 0.8em;
 }
-.btn-ley-3{
-	margin-top: 29%;
+.btn-ley{
+	margin-top:2% !important;
 }
-.btn-ley-2{
-	margin-top: 80%;
-}
-.btn-ley-0{
-	margin-top: 44%;
-}
-.btn-ley-1{
-	margin-top: 10%;
-	margin-bottom: 30%;
+.btn-ley-4 {
+    margin-bottom: 0;
 }
 /*SECCION 2*/
+#section2a{
+	height:200vh;
+}
 #section2a h2 {
     width: 100%;
 }
@@ -668,6 +801,7 @@ footer{
 	font-size: 1em !important;
 }
 #flujograma{
+	width:120%;
 	padding-bottom: 20%;
 	margin-left: -8%;
 }
@@ -704,7 +838,8 @@ footer{
 }
 /*SECCION 3*/
 #donde-titulo{
-	margin-top: 10%;
+	margin-top: 20%;
+	width:80%;
 }
 #donde-explicacion{
 	margin-top: 5%;
@@ -712,8 +847,11 @@ footer{
 	font-size: 1.2em;
 }
 .boton-donde{
-	margin-top: 5%;
+	margin-top: 40%;
 	margin-bottom:10%;
+}
+#img-donde{
+	widows: 50%;
 }
 /*SECCION 4*/
 #section4 h2{
@@ -735,6 +873,6 @@ footer{
 
 
 
-}
 
 }
+
