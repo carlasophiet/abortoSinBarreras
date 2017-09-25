@@ -1,7 +1,7 @@
 var tempX = 0;
 var tempY = 0;
 jQuery(document).ready(function() {
-
+				
 				//MAPA
 				jQuery('path, circle').hover(function(e) {
 				  console.log('trabaja');
@@ -11,11 +11,28 @@ jQuery(document).ready(function() {
 				jQuery('path, circle').mouseleave(function(e) {
 				  jQuery('#info-box').css('display','none');
 				});
-
 				jQuery(document).mousemove(function(e) {
+   					var parentOffset = $('#info-box').parent().offset(); 
+  					var relX = e.pageX - parentOffset.left-50;
+   					var relY = e.pageY - parentOffset.top-50;
+
+					console.log(relX, relY);
+  					jQuery('#info-box').css('top', relY);
+ 				    jQuery('#info-box').css('left', relX);
+				}).mouseover();
+				/*jQuery('path').mousemove(function(e){
+					var parentOffset= $(this).parent().offset();
+					var X = e.pageX-parentOffset.left;
+					var Y = e.pageY-parentOffset.top;
+					console.log(X);
+					console.log(Y);
+					jQuery('#info-box').css('top', Y-50);
+ 				    jQuery('#info-box').css('left',X-20);
+				}).mouseover();
+				/*jQuery(document).mousemove(function(e) {
   					jQuery('#info-box').css('top',e.pageY-jQuery('#info-box').height()-30);
  				    jQuery('#info-box').css('left',e.pageX-(jQuery('#info-box').width())/2);
-				}).mouseover();
+				}).mouseover();*/
 
 
 		//scroll hacia abajo
@@ -52,3 +69,4 @@ jQuery(document).ready(function() {
 				
 
 });
+

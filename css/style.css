@@ -210,14 +210,17 @@ header{
 }
  
 footer{
-	height:10vh;
+	height:20vh;
 }
 /**COLORES-SECCIONES**/
 .fondo-verde{
 	background-color: #82c45b;
 	color:white;
 }
-
+.fondo-negro{
+	background-color: black;
+	padding:0;
+}
 .fondo-mapa{
 	background-color: #f2f2f2;
 	padding: 0;
@@ -234,7 +237,7 @@ footer{
 }
 #ile{
 	width: 70% !important;
-	padding-top: 5%;
+	
 }
 .legal .strongsub{
 	font-size: 1.6em;
@@ -309,12 +312,12 @@ footer{
 }
 #info-box {
   display: none;
- position: absolute;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
   font-size: 1em;
-  width:20%;
+  width:40%;
   background-color:rgba(255,255,255,0.9);
   padding:0.5%;
   border-radius: 10px;
@@ -343,17 +346,17 @@ path:hover {
 	margin-top: 74.3%;
 }
 .btn-ley-4{
-	margin-top: 4%;
+	margin-top: 3%;
 	margin-bottom: 20%;
 }
 .btn-ley-5{
-	margin-top:22%;
+	margin-top:21%;
 }
 .btn-ley-6{
-	margin-top:98%;
+	margin-top:94%;
 }
 .btn-ley-7{
-	margin-top:94%;
+	margin-top:93%;
 }
 
 
@@ -438,8 +441,9 @@ path:hover {
 	color:white;
 }
 #img-donde{
-	width:150%;
-	padding-right: 30%;
+	width:165%;
+	padding-right: 35%;
+	padding-bottom:5%;
 }
 /*SECCIÓN 4*/
 #section4 h2{
@@ -468,11 +472,42 @@ path:hover {
 #img4{
 	width:80%;
 }
+
+/********FOOTER**********/
 footer{
-	background-color: black;
 	display:flex;
+	flex-direction: row;
 	justify-content: space-around;
+	margin: 0% 8%;
 }
+.logo-ong{
+	max-height:10vh;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+.logo-ong .img-ong{
+	width:80%;
+}
+.bajar{
+	padding-top: 1%;
+}
+.bajar-menos{
+	padding-top: 0.5%;
+}
+#amnistia{
+	margin-top: 3%;
+}
+#cdd{
+	margin-top: 4%;
+}
+#campaña{
+	margin-top: 3%;
+}
+#fundacion{
+	margin-top: 3%;
+}
+
+
 /*********************MEDIAS QUERIES************************************/
 @media screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape){
 	body{
@@ -649,6 +684,26 @@ footer{
 .substrong4{
 	width:100%;
 }
+footer{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin: 0% 0%;
+}
+.logo-ong{
+	max-height:7vh;
+	
+	margin-left: 5%;
+}
+#amnistia,#cdd,#campaña,#fundacion{
+	margin-top: 0%;
+	padding-top:2%;
+}
+.img-ong{
+	width:70%;
+	margin-top: 2%;
+}
 
 }
 @media screen and  (max-width: 480px) and (orientation: portrait){
@@ -670,6 +725,7 @@ footer{
 		width:100%;
 		padding-top: 3em;
 		padding-bottom: 3em;
+		margin-left:0;
 	}
 	.no-mostrar{
 		display:none;
@@ -721,6 +777,9 @@ footer{
 }
 
 	/*SECCION 1*/
+	.legal-aborto{
+		padding-bottom: 15%;
+	}
 #section1a h2{
 	width:100%;
 }
@@ -754,7 +813,11 @@ footer{
 #section1b h2{
 	width:100%;
 }
-
+#mapa{
+	padding-left: 2%;
+	margin-right: -2%;
+	width: 120%;
+}
 /*leyes*/
 .col-md-1 {
     width: 50% !important;
@@ -773,7 +836,7 @@ footer{
 }
 /*SECCION 2*/
 #section2a{
-	height:200vh;
+	height:150vh;
 }
 #section2a h2 {
     width: 100%;
@@ -847,7 +910,7 @@ footer{
 	font-size: 1.2em;
 }
 .boton-donde{
-	margin-top: 40%;
+	margin-top: 15%;
 	margin-bottom:10%;
 }
 #img-donde{
@@ -866,13 +929,44 @@ footer{
 #section4 strong {
     font-size: 1.2em;
 }
+.explicacion-campaña{
+	padding-bottom: 10%;
+}
 .explicacion-campaña li {
     font-size: 1.4em;
+   /* padding-bottom: 20%;*/
 
 }
+#img4{
+	padding:7% 0;
+}
 
+footer{
+	padding-left: 20%;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/*margin: 0% 8%;*/
+	margin:0;
+}
 
-
-
+.logo-ong{
+	max-height:7vh;
+	
+}
+#amnistia,#cdd,#campaña,#fundacion{
+	margin-top: 0%;
+	padding-top:0%;
+}
+.img-ong{
+	width:50%;
+	margin-top: 0%;
+}
+#amnistia{
+	padding-top:15px;
+}
+#cdd{
+	    margin-left: 65px;
+}
 }
 
