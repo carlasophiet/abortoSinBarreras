@@ -1,7 +1,12 @@
 var tempX = 0;
 var tempY = 0;
 jQuery(document).ready(function() {
-				
+				if(navigator.userAgent.indexOf('Mac') > 0)
+				$('body').addClass('mac-os');
+				if(navigator.userAgent.indexOf('Safari') > 0)
+				$('body').addClass('safari');
+				if(navigator.userAgent.indexOf('Chrome') > 0)
+				$('body').addClass('chrome');
 				//MAPA
 				jQuery('path, circle').hover(function(e) {
 				  console.log('trabaja');
